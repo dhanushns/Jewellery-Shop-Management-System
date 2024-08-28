@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap");
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  width: max-content;
+  padding: 10px;
+  margin-inline: auto;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-gap: 5%;
+  align-items: stretch;
+  padding: 50px;
+  z-index: 3;
+  height: auto;
+}
+
+.products img {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  transition: 1s;
+}
+
+.products .group,
+.products .group .img,
+.products .group .fav-btn {
+  transition: 1s;
+}
+
+.products .group:hover,
+.products .group .img,
+.products .group .fav-btn {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.products .group .fav-btn:hover {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+.container-title {
+  margin-inline: auto;
+  width: max-content;
+  font-weight: normal;
+  padding-top: 40px;
+}
+
+.group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  height: max-content;
+
+  .fav-btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: none;
+    background-color: transparent;
+
+    i {
+      background-color: transparent;
+      color: white;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+hr {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.product-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.change-modal-width {
+  max-width: 90% !important;
+}
+
+.modal_img {
+  width: 40%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.modal-body {
+  padding: 20px !important;
+}
+
+.modal-header {
+  background-color: #f2e9e9;
+  color: rgb(128, 97, 141);
+}
+
+span {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.product-deatils {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 520px;
+  .product-color {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 10px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bolder;
+  }
+  select {
+    padding: 5px;
+    width: 150px;
+    border-radius: 5px;
+  }
+  .product-purchase-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: absolute;
+    align-self: flex-end;
+    bottom: 5%;
+    left: 4%;
+
+    button {
+      width: 200px;
+      padding: 10px;
+    }
+    .buy-now-btn {
+      background-color: #f2e9e9;
+      color: rgb(128, 97, 141);
+      border: none;
+      font-size: 25px;
+      transition: 0.3s ease-in;
+      span {
+        font-weight: bolder;
+      }
+    }
+    .buy-now-btn:hover {
+      background-color: rgb(128, 97, 141);
+      color: #f2e9e9;
+      transition: 0.3s ease-in;
+    }
+    .cart-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #dddcdc;
+      color: rgb(75, 72, 72);
+      border: none;
+      transition: 0.3s ease-in;
+      .cart_loading {
+        animation: loading 1s linear infinite;
+        display: none;
+      }
+    }
+    .cart-btn:hover {
+      background-color: black;
+      color: #ffff;
+      transition: 0.3s ease-in;
+    }
+  }
+  .modal-fav-btn {
+    position: absolute;
+    right: 0;
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+
+.price-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  .details-1 {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
+
+.modal-footer {
+  gap: 20px;
+}
+
+.group-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .child-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  span {
+    font-size: 12px;
+  }
+  i {
+    font-size: 15px;
+  }
+}
+
+.grp-1,
+.grp-2 {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 10px;
+}
+
+.grp-3 {
+  width: 70px;
+  height: 70px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.result-header {
+  padding: 20px;
+  span {
+    font-size: 25px;
+    font-weight: normal;
+  }
+}
+
+.no-data {
+  width: max-content;
+  margin-inline: auto;
+  display: none;
+}
+
+.accordion-header {
+  padding: 20px;
+}
+
+.accordion-button {
+  position: relative;
+  font-size: 50px;
+  justify-content: center;
+  padding: 0;
+}
+
+.accordion-button::after {
+  position: absolute;
+  right: 5%;
+  margin-left: 0;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

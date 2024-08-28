@@ -1,0 +1,58 @@
+product Details
+
+Diamond Chains
+dc-1
+Name : Pendant Chain
+carat : 18ct
+color : white
+stone : cubic zirconia stone (CZ)
+Price  : 92,800
+
+dc-2
+Name : Pendant Chain
+carat : 18ct
+color : Rose Gold
+stone : cubic zirconia stone (CZ)
+Price : 70,000
+
+dc-3
+Name : Pendant Chain
+carat : 18ct
+color : Rose Gold
+stone : cubic zirconia stone (CZ)
+price : 80,000
+
+------------------------------------------------------
+
+Diamond Earings
+dr-1, dr-2 dr-3
+Name : Stone Stud and drops
+carat : 18ct
+color : Rose Gold
+stone : cubic zirconia stone (CZ)
+dr-1 -> price : 70,000
+dr-2 -> price : 62,000
+dr-3 -> price : 92,000
+
+-----------------------------------------------------
+
+Diamond finger rings
+
+dr-1,dr-3
+name : Diamond ring
+carot : 18ct
+color : yellow
+diamond name : Round Brilliant
+dr-1 -> price : 74,000
+dr-3 -> price : 87,000
+ 
+
+dr-2
+Name : Diamond Ring
+carot : 18ct
+color : white gold with diamond
+diamond name : oval
+price : 32,000
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account - NS Jewells</title>
+    <script src="scripts/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function input_handler(event) {
+        console.log(event.target.id);
+        if (event.target.id === "email_handler") {
+          let text = document.getElementById("email_text_handler").style;
+          text.top = "-20%";
+          text.fontSize = "15px";
+        } else {
+          let text = document.getElementById("pass_text_handler").style;
+          text.top = "-20%";
+          text.fontSize = "15px";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <label>NS Jewells</label>
+      </div>
+      <div class="login_box">
+        <form action="./login.php" method="post">
+          <div class="user_input email">
+            <input
+              type="text"
+              class="email_input"
+              name="email"
+              required=""
+              id="email_handler"
+              onclick="input_handler(event)"
+            />
+            <label class="email_label" id="email_text_handler">Email</label>
+          </div>
+          <div class="user_input password">
+            <input
+              type="password"
+              class="pass_input"
+              name="password"
+              required=""
+              id="password_handler"
+              onclick="input_handler(event)"
+            />
+            <label class="pass_label" id="pass_text_handler">Password</label>
+          </div>
+          <div class="fg">
+            <a href="forget_pass.php" id="forget_password">Forget password?</a>
+          </div>
+          <input
+            class="sign-in_btn"
+            type="submit"
+            name="submit"
+            value="Sign in"
+          />
+          <div class="sign_up">
+            <a href="sign_up.php"><label>New user? Create Account</label></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

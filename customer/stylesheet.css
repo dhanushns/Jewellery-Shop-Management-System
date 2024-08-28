@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-icons {
+  font-size: 150px !important;
+}
+
+.account-btn {
+  color: black;
+}
+
+.user-options {
+  width: 60%;
+  margin-inline: auto !important;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px;
+}
+
+.profile-ctn {
+  margin-top: 50px;
+  .profile-form {
+    margin-inline: auto;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+}
+
+.form-title-col {
+  padding: 40px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.data-form .row {
+  margin: 0;
+}
+
+.his-modal {
+  padding: 10px 40px;
+}
+
+.his-container {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  margin-top: 10px !important;
+  padding-bottom: 20px;
+}
+
+.purchase-summary-col {
+  border-right: 2px dashed rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  .row {
+    margin-top: 10px !important;
+    font-size: 20px0;
+  }
+}
+
+.purchase-summary-content {
+  position: sticky;
+  top: 120px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.his-pr-modal {
+  padding: 10px;
+}
+
+.his-pr-container {
+  margin-left: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.his-product-content {
+  height: 100%;
+}
